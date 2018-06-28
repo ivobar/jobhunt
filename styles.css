@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 * {
@@ -7,7 +7,7 @@
 }
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .navbar {
@@ -15,15 +15,16 @@ body {
     padding: 15px 50px;
     justify-content: space-between;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: #212121;
 }
 
 .navbar ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
-    width: 200px;
+    width: 15%;
     align-items: center;
+    margin-right: 50px;
 }
 
 .user-profile-icon {
@@ -33,30 +34,45 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
     text-decoration: none;
     color: #FFFFFF;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.logo i {
+    font-size: 2em;
+    color: #FFFFFF;
 }
 
 .landing {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("src/happy-brown-poggers-doggo-bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 880px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    height: 890px;
 }
 
 .landing h1 {
     margin-bottom: 25px;
-    font-size: 2.5em;
-    color: #4CAF50;
-    width: 700px;
+    font-size: 3em;
+    color: #FFFFFF;
+    width: 55%;
     text-align: center;
+    position: absolute;
+    top: 15%;
 }
 
 .landing p {
@@ -65,7 +81,7 @@ body {
 
 /* Styles for the forms */
 
-.login, .register {
+.login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,14 +89,9 @@ body {
     height: 880px;
 }
 
-.register-container, .login-container {
+.login-container {
     border: 2px solid #4CAF50;
     border-radius: 35px;
-}
-
-.register-container{
-    display: flex;
-    align-items: center;
 }
 
 .form-container {
@@ -88,12 +99,6 @@ body {
     flex-direction: column;
     padding: 75px;
     width: 250px;
-}
-
-.form-container h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #4CAF50;
 }
 
 .input {
@@ -140,40 +145,95 @@ body {
     background-color: #418241;
 }
 
-.register-forms-container {
+/* Styles for the register section */
+
+.register {
     display: flex;
+    width: 100%;
+    height: 100%;
 }
 
-.vertical{
-    border: 1px solid #4CAF50;
-    height: 300px;
+.reg-container-l, .reg-container-r {
+    width: 50%;
 }
 
-.form-container ul{
-    list-style: none;
-    margin: 15px 0 25px 0;
-}
-
-.form-container ul li{
-    margin: 5px 0;
-}
-
-.register-container{
-    background: url("src/tucked-in-pug-bg.jpg");
+.reg-container-l{
+    background: url('src/dog-left.png');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: right;
 }
 
-.register-container h2,.register-container li{
+.reg-container-l .form-container{
+    margin-top: 30%;
+    width: 40%;
+    text-align: right;
+}
+
+.register h2{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.register p{
+    margin-bottom: 15px;
     color: #FFFFFF;
 }
 
-.register-container li:before{
-    content: "\f00c";
-    font-family: 'FontAwesome';
-    color: #4CAF50;
+.reg-container-l p:after{
+    content: " \f00c";
+    font-family: FontAwesome;
+    font-size: 1.4em;
 }
+
+.reg-container-r{
+    background: url("src/dog-right.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.reg-container-r .form-container{
+    margin-top: 30%;
+    width: 40%;
+    text-align: left;
+}
+
+.reg-container-r p:before{
+    content: "\f00c ";
+    font-family: FontAwesome;
+    font-size: 1.4em;
+}
+
+.register button{
+    padding: 25px 50px;
+}
+
+.reg-container-r button{
+    background-color: #009688;
+}
+
+.reg-container-l input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    text-align: right;
+}
+
+.reg-container-l input::-moz-placeholder { /* Firefox 19+ */
+    text-align: right;
+}
+
+.reg-container-l input:-ms-input-placeholder { /* IE 10+ */
+    text-align: right;
+}
+
+.reg-container-l input:-moz-placeholder { /* Firefox 18- */
+    text-align: right;
+}
+
+
+/* styles for the subscribe section */
 
 .subscribe{
     display: flex;
