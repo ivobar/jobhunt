@@ -157,7 +157,7 @@ body {
     width: 50%;
 }
 
-.reg-container-l{
+.reg-container-l {
     background: url('src/dog-left.png');
     background-position: center;
     background-size: cover;
@@ -165,13 +165,13 @@ body {
     justify-content: right;
 }
 
-.reg-container-l .form-container{
+.reg-container-l .form-container {
     margin-top: 30%;
     width: 40%;
     text-align: right;
 }
 
-.register h2{
+.register h2 {
     color: #FFFFFF;
     text-transform: uppercase;
     font-size: 2.5em;
@@ -179,40 +179,40 @@ body {
     margin-bottom: 10px;
 }
 
-.register p{
+.register p {
     margin-bottom: 15px;
     color: #FFFFFF;
 }
 
-.reg-container-l p:after{
+.reg-container-l p:after {
     content: " \f00c";
     font-family: FontAwesome;
     font-size: 1.4em;
 }
 
-.reg-container-r{
+.reg-container-r {
     background: url("src/dog-right.png");
     background-position: center;
     background-size: cover;
 }
 
-.reg-container-r .form-container{
+.reg-container-r .form-container {
     margin-top: 30%;
     width: 40%;
     text-align: left;
 }
 
-.reg-container-r p:before{
+.reg-container-r p:before {
     content: "\f00c ";
     font-family: FontAwesome;
     font-size: 1.4em;
 }
 
-.register button{
+.register button {
     padding: 25px 50px;
 }
 
-.reg-container-r button{
+.reg-container-r button {
     background-color: #009688;
 }
 
@@ -232,10 +232,9 @@ body {
     text-align: right;
 }
 
-
 /* styles for the subscribe section */
 
-.subscribe{
+.subscribe {
     display: flex;
     justify-content: space-around;
     background: linear-gradient(rgba(65, 130, 65, 0.5), rgba(65, 130, 65, 0.5)), url("src/hurr-durr-i-pretend-to-send-emails-bg.jpg");
@@ -243,51 +242,95 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.subscribe .form-container{
+
+.subscribe .form-container {
     width: 35%;
 }
 
-.subscribe .form-container form{
+.subscribe .form-container form {
     width: 50%;
     margin: auto;
 }
 
-.subscribe .form-container h3{
+.subscribe .form-container h2 {
     text-align: center;
     margin-bottom: 15px;
     color: #FFFFFF;
 }
 
-.guide{
+.subscribe button {
+    border: 1px solid #4CAF50;
+    background-color: #FFFFFF;
+    color: #000000;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+/* styles for guide section */
+
+.guide {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #009688;
+    background-color: #E0E0E0;
 }
 
-.guide p {
-    width: 65%;
-    text-align: center;
-    margin-bottom: 25px;
-    margin-top: 25px;
+.guide h2 {
+    margin: 100px 0 50px 0;
+    color: #424242;
 }
 
-.guide button{
-    padding: 15px 50px;
-    border: none;
-    border-radius: 25px;
+.guide button {
+    border: 1px solid #4CAF50;
+    border-radius: 20px;
+    padding: 10px 35px;
+    background-color: #FFFFFF;
     font-size: 1.1em;
-    background-color: #4CAF50;
-    color: #FFFFFF;
-    margin-bottom: 25px;
+    color: #000000;
+    margin-bottom: 100px;
 }
 
-.guide button:hover{
+.guide button:hover {
     cursor: pointer;
 }
 
-.guide button:active{
+.guide button:active {
     background-color: #FFFFFF;
     color: #000000;
+}
+
+/* Marketing Section styles */
+
+.marketing {
+    background-color: #F5F5F5;
+    padding: 100px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.marketing:first-child {
+    margin-bottom: 50px;
+}
+
+.mar-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.mar-row article {
+    display: flex;
+    width: 30%;
+}
+
+.mar-row article i {
+    font-size: 3em;
+    color: #9E9E9E;
+}
+
+.mar-row article p {
+    margin-left: 30px;
+    color: #545454;
 }
