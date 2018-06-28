@@ -169,14 +169,13 @@ body {
     background: url('src/dog-left.png');
     background-position: center;
     background-size: cover;
-    display: flex;
-    justify-content: right;
 }
 
 .reg-container-l .form-container {
     margin-top: 30%;
     width: 40%;
     text-align: right;
+    float: right;
 }
 
 .register h2 {
