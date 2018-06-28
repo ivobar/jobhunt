@@ -38,9 +38,17 @@ body {
     font-size: 1.2em;
 }
 
+.navbar ul li a:hover{
+    color: #4CAF50;
+}
+
 .logo {
     display: flex;
     align-items: center;
+}
+
+.logo:hover a, .logo:hover i{
+    color: #4CAF50;
 }
 
 .logo a {
@@ -216,6 +224,12 @@ body {
     background-color: #009688;
 }
 
+.register button:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #4CAF50;
+    color: #000000;
+}
+
 .reg-container-l input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     text-align: right;
 }
@@ -266,6 +280,11 @@ body {
     padding-right: 35px;
 }
 
+.subscribe button:hover{
+    background-color: #4CAF50;
+    color: #FFFFFF;
+}
+
 /* styles for guide section */
 
 .guide {
@@ -293,6 +312,8 @@ body {
 
 .guide button:hover {
     cursor: pointer;
+    background-color: #4CAF50;
+    color: #FFFFFF;
 }
 
 .guide button:active {
